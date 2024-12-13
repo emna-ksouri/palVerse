@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico|Caveat|Quicksand|Amatic+SC&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>PalVerse : An Art Odyssey</title>
+    <link rel="icon" type="image/jpg" href="../Image/Home-pics-vid/logo.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/explore.css">
+    
+</head>
+
+<body>
+
+    <!-- Start Banner section -->
+    <div class="moving-banner">
+        <p class="banner-text">&#x1F604; In life's gallery &#x1F3A8; let art &#x2728; be the masterpiece 🖼 that whispers your story to the world 🌍</p>
+    </div>
+
+    <!-- Start nav section -->
+    <nav class="navbar">
+        <div class="search">
+            <form action="/search" method="get" class="search-form">
+                <img id="search-log-icon" src="../Image/Home-pics-vid/search.jpg" alt="Search Icon">
+                <input type="text" id="search-box" name="q" placeholder="Search.for.art.">
+            </form>
+        </div>
+
+        <div class="centred-nav">
+            <!-- Menu 1 -->
+            <ul class="menu-1">
+                <li><a href="../Home.html">Home</a></li>
+                <li><a href="explore.html">Explore Art</a></li>
+            </ul>
+
+            <!-- Logo -->
+            <img src="../Image/Home-pics-vid/logo.jpg" alt="PalVerse Logo" class="logo">
+
+            <!-- Media Links -->
+            <ul class="media" id="media">
+                <li>
+                    <form action="/search" method="get" class="search-form">
+                        <img id="search-log-icon" src="../Image/Home-pics-vid/search.jpg" alt="Search Icon">
+                        <input type="text" id="search-box" name="q" placeholder="Search...">
+                    </form>
+                </li>
+                <li><a href="../Home.html">Home</a></li>
+                <li><a href="explore.html">Explore Art</a></li>
+                <li><a href="workshop.html">Workshops</a></li>
+                <li><a href="shop.html" class="last">Shop</a></li>
+            </ul>
+
+            <!-- Menu 2 -->
+            <ul class="menu-2">
+                <li><a href="workshop.html">Workshops</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </div>
+
+        <!-- Login/Signin Container -->
+        <div class="login-signin-container">
+            <img id="search-log-icon" src="../Image/Home-pics-vid/log.jpg" alt="Login Icon">
+            <span onclick="registreLog()">login</span>
+            <span onclick="registreSign()">Sign In</span>
+            <i class="fa-solid fa-bars" id="btn" onclick="menu()"></i>
+        </div>
+    </nav>
+    <!-- End nav section -->
+
+    <!-- Start login section -->
+    <div class="blur" id="blur"></div>
+    <div id="form" class="form-container">
+        <span class="close" id="close-btn" onclick="closeForm()">&times;</span>
+
+        
+
+        <!-- Social Icons -->
+        <div class="social">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="">
+            <img src="https://cdn.pixabay.com/photo/2021/06/15/12/17/instagram-6338401_1280.png" alt="">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/twitter-3-logo-jpg-transparent.png" alt="">
+        </div>
+
+        <!-- Login Form -->
+        <form class="login" id="login">
+            <div class="name">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="password">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        <!-- Sign-in Form -->
+        <form class="sign" id="sign" onsubmit="return validateForm()" method="post">
+            <div class="name">
+                <label for="new-username">New Username:</label>
+                <input type="text" id="new-username" name="new-username">
+            </div>
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+
+            </div>
+            <div class="password">
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" name="new-password">
+            </div>
+            <div class="password-2">
+                <label for="verify-password">Verify Password:</label>
+                <input type="password" id="verify-password" name="verify-password">
+            </div>
+            <button type="submit" class="btn">Sign In</button>
+        </form>
+    </div>
+    <!-- End login section -->
+
+  <!-- Start section 1  -->
+  <section class="section-1">
+    <article class="article-1 article">
+      <img src="../Image/explorepics/whatisart.jpg" class="def" alt="Image 1" width="400" height="300">
+    </article>
+    <article class="article-2 article">
+      <p>
+      <h2>What is painting?</h2>
+      </p>
+      <p class="whatisart1">Painting is the magical dance of colorful pigments upon a canvas, often orchestrated by the
+        delicate strokes of brushes. It is a symphony of artistic expression, a waltz of emotions, landscapes, objects,
+        and people, all brought to life through a palette of diverse hues and textures.</p>
+    </article>
+
+  </section>
+  <!-- End section 1  -->
+
+
+  <!-- Start section-2  -->
+
+  <section class="section-2">
+    <p>
+    <h2>Discover our GRAND MASTERS with us</h2>
+    </p>
+    <article class="artist-section">
+      <div class="artist" onclick="redirectToWikipedia('Paul Cézanne')">
+        <img src="../Image/explorepics/PaulCezanne.jpg" alt="PaulCezanne">
+        <span class="artist-name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paul Cézanne</span>
+      </div>
+      <div class="artist" onclick="redirectToWikipedia('Rembrandt')">
+        <img src="../Image/explorepics/Rembrandt.jpg" alt="Rembrandt">
+        <span class="artist-name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rembrandt</span>
+      </div>
+      <div class="artist" onclick="redirectToWikipedia('Salvador Dalí')">
+        <img src="../Image/explorepics/SalvadorDali.jpg" alt="SalvadorDali">
+        <span class="artist-name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Salvador Dalí</span>
+      </div>
+      <div class="artist" onclick="redirectToWikipedia('Vincent van Gogh')">
+        <img src="../Image/explorepics/vincent.jpg" alt="vincent">
+        <span class="artist-name">&nbsp;&nbsp;&nbsp;&nbsp;Vincent van Gogh</span>
+      </div>
+      <div class="artist" onclick="redirectToWikipedia('Frida_Kahlo')">
+        <img src="../Image/explorepics/FridaKahlo.jpg" alt="FridaKahlo.">
+        <span class="artist-name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frida_Kahlo</span>
+      </div>
+      <div class="artist" onclick="redirectToWikipedia('Leonardo_da_Vinci')">
+        <img src="../Image/explorepics/leonardo.jpg" alt="leonardo">
+        <span class="artist-name">Leonardo_da_Vinci</span>
+      </div>
+      <div class="artist" onclick="redirectToWikipedia('Pablo_Picasso')">
+        <img src="../Image/explorepics/pablo.jpg" alt="pablo">
+        <span class="artist-name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pablo_Picasso</span>
+      </div>
+      <div class="artist" onclick="redirectToWikipedia('Pierre-Auguste_Renoir')">
+        <img src="../Image/explorepics/AugusteRenoir.jpg" alt="AugusteRenoir">
+        <span class="artist-name">Pierre-Auguste_Renoir</span>
+      </div>
+
+
+
+    </article>
+    <!-- Add more artist divs as needed -->
+  </section>
+  <!-- End section-2  -->
+
+  <!-- Start section 3 -->
+  <article class="painting-container">
+
+    <div class="painting-type">
+      <h3>1. Portrait Paintings</h3>
+      <p>“Every portrait painted by an artist is the portrait of.”</p>
+      <p><strong>Famous Landscape Artists:</strong> Vincent Van Gogh, Claude Monet, J.M.W. Turner.</p>
+    </div>
+
+    <div class="painting-type">
+      <h3>2. Landscape Paintings</h3>
+      <p>Landscape paintings are one of the most renowned types of painting that focuses on capturing natural elements
+        on the canvas.</p>
+      <p><strong>Famous Portrait Artists:</strong> Frida Kahlo, Rembrandt, Leonardo da Vinci</p>
+    </div>
+  </article>
+  <article class="painting-container">
+    <div class="painting-type">
+      <h3>3. Still Life</h3>
+      <p>Still-life painting literally translates to a type of painting that shows inanimate objects as the subject of
+        the painting.</p>
+      <p><strong class="littletitle">Famous Still Life Artists:</strong> Paul Cèzanne, Salvador Dali, Gorges Braque
+      </p>
+    </div>
+
+    <div class="painting-type">
+      <h3>4. Abstract Painting</h3>
+      <p>Abstract Painting is one of those painting types that does not attempt to represent an accurate reality.</p>
+      <p><strong>Famous Abstract Artists:</strong> Wassily Kandinsky, Jackson Pollock, Willem De Kooning</p>
+    </div>
+  </article>
+  <!-- End section 3 -->
+
+
+  
+  <!-- Start footer  -->
+  <footer class="site-footer">
+    <div class="top-footer">
+      <p>Follow Us!:</p>
+      <a href="https://instagram.com" class="af"><img src="../Image/Home-pics-vid/instagram.jpg" alt="Instagram"
+          class="social-icon"></a>
+      <a href="https://facebook.com" class="af"><img src="../Image/Home-pics-vid/facebook.jpg" alt="Facebook"
+          class="social-icon"></a>
+      <a href="https://pinterest.com" class="af"><img src="../Image/Home-pics-vid/pinterest.jpg" alt="Pinterest"
+          class="social-icon"></a>
+    </div><br /><br />
+    <div class="bottom-footer">
+      <p class="slogan">
+        An Art Odyssey
+      </p><br />
+      <div class="legal-info">
+        &copy; 2024 PalVerse | <em>Directed By <strong>: </strong>Ksouri Emna G5 <strong>--</strong> Bejaoui Hadir G6</em>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer  -->
+
+
+  <!-- partner section  -->
+  <Section class="partner-section">
+    <img src="../Image/Home-pics-vid/p.jpg" alt="Partner 1">
+    <img src="../Image/Home-pics-vid/p1.jpg" alt="Partner 2">
+    <img src="../Image/Home-pics-vid/p2.jpg" alt="Partner 3">
+    <img src="../Image/Home-pics-vid/p3.jpg" alt="Partner 4">
+    <img src="../Image/Home-pics-vid/p4.jpg" alt="Partner 5">
+    <img src="../Image/Home-pics-vid/p5.jpg" alt="Partner 6">
+    <img src="../Image/Home-pics-vid/p6.jpg" alt="Partner 7">
+  </section>
+
+
+
+  <button onclick="scrollToTop()" id="back-to-top-btn" title="Go to top">
+          <img src="../Image/Home-pics-vid/return.jpg" alt="Back to Top">
+  </button>
+  <script src="../js/explore.js"></script>	
+</body>
+</html>

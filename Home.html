@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico|Caveat|Quicksand|Amatic+SC&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>PalVerse : An Art Odyssey</title>
+    <link rel="icon" type="image/jpg" href="Image/Home-pics-vid/logo.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/Home.css">
+
+    
+</head>
+
+<body>
+
+    <!-- Start Banner section -->
+    <div class="moving-banner">
+        <p class="banner-text">&#x1F604; In life's gallery &#x1F3A8; let art &#x2728; be the masterpiece 🖼 that whispers your story to the world 🌍</p>
+    </div>
+
+    <!-- Start nav section -->
+    <nav class="navbar">
+        <div class="search">
+            <form action="/search" method="get" class="search-form">
+                <img id="search-log-icon" src="Image/Home-pics-vid/search.jpg" alt="Search Icon">
+                <input type="text" id="search-box" name="q" placeholder="Search.for.art.">
+            </form>
+        </div>
+
+        <div class="centred-nav">
+            <!-- Menu 1 -->
+            <ul class="menu-1">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Html/explore.html">Explore Art</a></li>
+            </ul>
+
+            <!-- Logo -->
+            <img src="Image/Home-pics-vid/logo.jpg" alt="PalVerse Logo" class="logo">
+
+            <!-- Media Links -->
+            <ul class="media" id="media">
+                <li>
+                    <form action="/search" method="get" class="search-form">
+                        <img id="search-log-icon" src="Image/Home-pics-vid/search.jpg" alt="Search Icon">
+                        <input type="text" id="search-box" name="q" placeholder="Search...">
+                    </form>
+                </li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Html/explore.html">Explore Art</a></li>
+                <li><a href="Html/workshop.html">Workshops</a></li>
+                <li><a href="Html/shop.html" class="last">Shop</a></li>
+            </ul>
+
+            <!-- Menu 2 -->
+            <ul class="menu-2">
+                <li><a href="Html/workshop.html">Workshops</a></li>
+                <li><a href="Html/shop.html">Shop</a></li>
+            </ul>
+        </div>
+
+        <!-- Login/Signin Container -->
+        <div class="login-signin-container">
+            <img id="search-log-icon" src="Image/Home-pics-vid/log.jpg" alt="Login Icon">
+            <span onclick="registreLog()">login</span>
+            <span onclick="registreSign()">Sign In</span>
+            <i class="fa-solid fa-bars" id="btn" onclick="menu()"></i>
+        </div>
+    </nav>
+    <!-- End nav section -->
+
+    <!-- Start login section -->
+    <div class="blur" id="blur"></div>
+    <div id="form" class="form-container">
+        <span class="close" id="close-btn" onclick="closeForm()">&times;</span>
+
+        
+
+        <!-- Social Icons -->
+        <div class="social">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="">
+            <img src="https://cdn.pixabay.com/photo/2021/06/15/12/17/instagram-6338401_1280.png" alt="">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/twitter-3-logo-jpg-transparent.png" alt="">
+        </div>
+
+        <!-- Login Form -->
+        <form class="login" id="login">
+            <div class="name">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="password">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        <!-- Sign-in Form -->
+        <form class="sign" id="sign" onsubmit="return validateForm()" method="post">
+            <div class="name">
+                <label for="new-username">New Username:</label>
+                <input type="text" id="new-username" name="new-username">
+            </div>
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+
+            </div>
+            <div class="password">
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" name="new-password">
+            </div>
+            <div class="password-2">
+                <label for="verify-password">Verify Password:</label>
+                <input type="password" id="verify-password" name="verify-password">
+            </div>
+            <button type="submit" class="btn">Sign In</button>
+        </form>
+    </div>
+    <!-- End login section -->
+
+    <!-- Slideshow -->
+    <div class="slideshow">
+        <img src="Image/Home-pics-vid/ss1.jpg" class="slide" alt="Image 1">
+        <img src="Image/Home-pics-vid/ss2.jpg" class="slide" id="slide1" alt="Image 2">
+        <img src="Image/Home-pics-vid/ss3.jpg" class="slide" id="slide1"  alt="Image 3">
+        <img src="Image/Home-pics-vid/ss4.jpg" class="slide" id="slide1"  alt="Image 4">
+        <img src="Image/Home-pics-vid/ss5.jpg" class="slide" id="slide1"  alt="Image 5">
+    </div>
+
+    <!-- Section 1 -->
+    <section class="section-1">
+        <article class="article-1">
+            <p class="paragraphe1">About US!</p>
+            <p>For over 20 years,<br />We have been catalysts for beautiful encounters. Our mission is to bring together lovers
+                of beauty in search of a work of art and artists who, through their passion, give life to beauty.<br />Our
+                mission is to make your life easier. Everything is designed so that you feel comfortable, so that the only thing
+                that matters is the emotion you experience.</p>
+        </article>
+        <article class="article-2">
+            <video width="640" height="360" controls>
+                <source src="Image/Home-pics-vid/gallerie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </article>
+    </section>
+    <!-- End section 1 -->
+
+    <!-- Section 2 -->
+    <section class="section-2">
+        <p><span>1.4M </span><br /> ORIGINAL ARTWORKS</p>
+        <p><span>94K </span><br /> EMERGING ARTISTS</p>
+        <p><span>110+</span><br /> COUNTRIES REPRESENTED</p>
+        <p><span>Featured Art Collections</span><br />New original art, handpicked by our expert curators</p>
+    </section>
+    <!-- End section 2 -->
+
+    <!-- Line with centered phrase -->
+    <div class="line-container">
+        <div class="line"></div>
+        <img class="centered-photo" src="Image/Home-pics-vid/barepic.jpg" alt="Centered Photo">
+    </div>
+	
+	<!-- subscription-section -->
+    <section class="subscription-section">
+        <form>
+           <strong> <label  class="subscription-paragraph" for="email">Subscribe with your email:</label></strong>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <hr class="divider">
+        <p class="subscription-paragraph">
+            By providing your email address, you agree to receive email updates, including special offers, tips, our latest collections, and artistic news. You can unsubscribe at any time.
+        </p>
+    </section>
+	
+    <!-- Section with two manager photos -->
+
+    <section>
+       	 <div class="mangers-txt">Meet Our Management Team</div><br/><br/>
+		 <div class="managers-section">
+        <div class="manager">
+            <img src="Image/Home-pics-vid/hadir.jpg" alt="Manager1" class="picm">
+            <p> Hadir bejaoui</p>
+        </div>
+        <div class="manager">
+            <img src="Image/Home-pics-vid/ksouriemna.jpg" alt="Manager2" class="picm">
+            <p> Emna Ksouri</p>
+        </div>
+		</div>
+    </section>
+
+    <!-- Start footer -->
+    <footer class="site-footer">
+        <div class="top-footer">
+            <p>Follow Us!:</p>
+            <a href="https://instagram.com" class="af"><img src="Image/Home-pics-vid/instagram.jpg" alt="Instagram" class="social-icon"></a>
+            <a href="https://facebook.com" class="af"><img src="Image/Home-pics-vid/facebook.jpg" alt="Facebook" class="social-icon"></a>
+            <a href="https://pinterest.com" class="af"><img src="Image/Home-pics-vid/pinterest.jpg" alt="Pinterest" class="social-icon"></a>
+        </div><br /><br />
+        <div class="bottom-footer">
+            <p class="slogan">
+                An Art Odyssey
+            </p><br />
+            <div class="legal-info">
+                &copy; 2024 PalVerse | <em>Directed By <strong>: </strong>Ksouri Emna G5 <strong>--</strong> Bejaoui Hadir G6</em>
+				
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Partner section -->
+    <section class="partner-section">
+        <img src="Image/Home-pics-vid/p.jpg" alt="Partner 1">
+        <img src="Image/Home-pics-vid/p1.jpg" alt="Partner 2">
+        <img src="Image/Home-pics-vid/p2.jpg" alt="Partner 3">
+        <img src="Image/Home-pics-vid/p3.jpg" alt="Partner 4">
+        <img src="Image/Home-pics-vid/p4.jpg" alt="Partner 5">
+        <img src="Image/Home-pics-vid/p5.jpg" alt="Partner 6">
+        <img src="Image/Home-pics-vid/p6.jpg" alt="Partner 7">
+    </section>
+
+    <button onclick="scrollToTop()" id="back-to-top-btn" title="Go to top">
+        <img src="Image/Home-pics-vid/return.jpg" alt="Back to Top">
+    </button>
+   <script src="js/Home.js"></script>
+</body>
+</html>

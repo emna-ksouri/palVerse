@@ -1,0 +1,579 @@
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: 'Dancing Script', cursive;
+            background-color:#E8CDA142;
+			overflow-x: hidden;
+			
+			
+        } 
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+			transition: color 0.3s ease-in-out;
+		 
+        }
+		a:hover {
+            color:#C39958;
+		}
+
+
+/*mooving banneeer*/ 
+  
+        .moving-banner {
+            overflow: hidden; /* Hide overflowing content */
+            background-color: #DCB16F;
+            height:5VH;
+        }
+
+
+
+        .banner-text {
+            margin:0;
+            padding: 10px;
+            background-color: Transparent; 
+            animation: moveBanner 20s linear infinite; 
+        }
+	
+	
+	
+	
+/* keyframes for the animation */
+        @keyframes moveBanner {
+        0% {
+            transform: translateX(100%); /* Start off-screen to the right */	
+        }
+        100% {
+            transform: translateX(-100%); /* Move off-screen to the left */	
+        }
+        }
+
+
+
+/*naaaaaaaaaaaaaaaaaaaav part*/
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #fbf1e5;
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+            z-index: 10;
+			font-size:20px;
+        }
+
+        .navbar img {
+            width: 50px;
+        }
+
+        .navbar .search form {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .navbar .search form img {
+            width: 20px;
+        }
+
+        .navbar .search form input {
+            outline: none;
+            border: none;
+            background-color: transparent;
+			width:50px;
+        }
+
+        .navbar .search form input:focus {
+            border: 1px solid black;
+            background-repeat: no-repeat;
+        }
+
+        .navbar .centred-nav {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .navbar .centred-nav .menu-1 {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .navbar .centred-nav .menu-2 {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+
+
+        .navbar .centred-nav li a {
+            font-weight: bold;
+        }
+
+        .navbar .centred-nav img {
+            width: 250px;
+            cursor: pointer;
+        }
+
+        .navbar .login-signin-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .navbar .login-signin-container i {
+            font-size: 20px;
+            display: none;
+            cursor: pointer;
+        }
+
+        .navbar .login-signin-container img {
+            width: 20px;
+        }
+
+        .navbar .login-signin-container span {
+            font-weight: bold;
+        }
+
+        .navbar .centred-nav .media {
+            display: none;
+        }
+
+        .navbar .login-signin-container {
+            cursor: pointer;
+        }
+
+
+
+
+
+/* Start-login-section  */
+
+        .blur {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0000008a;
+            display: none;
+            z-index: 100;
+        }
+
+        .form-container .social img {
+            width: 30px;
+        }
+
+        .form-container .social {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .form-container {
+            flex-direction: column;
+            width: 300px;
+            background-color: #fef4e8;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 15px 5px;
+            border-radius: 10px;
+            display: none;
+            z-index: 101;
+
+        }
+
+
+        .form-container .close {
+            position: absolute;
+            right: 5px;
+            top: -20px;
+            font-size: 50px;
+            cursor: pointer;
+        }
+
+
+        .form-container .button-form {
+            width: 100%;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .form-container .button-form button {
+            border: none;
+            outline: none;
+            background-color: skyblue;
+            padding: 4px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container form .name {
+            margin: 20px 0 10px 0;
+
+        }
+
+        .form-container form .password {
+            margin: 10px 0;
+        }
+
+        .form-container form input {
+            background-color: transparent;
+            width: 100%;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid black;
+}
+
+        .form-container form .btn {
+            outline: none;
+            border: none;
+            width: fit-content;
+            background-color: skyblue;
+            padding: 4px 8px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 10px auto;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+
+
+
+/* what-is-art-section*/
+        .section-1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+            background-color: White;
+            padding: 20px;
+            margin-bottom: 50px;
+}
+
+        .section-1 .article {
+            flex: 3;
+        }
+
+        .section-1 .article:first-child {
+            flex: 4;
+
+        }
+
+        .section-1 .article-1 img {
+            width: 90%;
+            height: auto;
+        }
+
+
+        .whatisart1 {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 2em;
+            margin-top: 0;
+            line-height: 1.6;
+ 
+        }
+
+        h2 {
+
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #8A5105, #936321, #FAA025, #6D450D, #FAA025, #D17A07);
+            -webkit-background-clip: text;
+            color: transparent;
+
+        }
+
+
+
+
+/* grand-masters-section*/
+		
+
+		.artist-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 50px;
+		}
+
+		.artist {
+            width: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            position: relative;
+		}
+
+
+		.artist-name {
+            position: absolute;
+            bottom: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 5px;
+            font-size: 10px;
+            width: 100%;
+		}
+
+		.artist img {
+            width: 100%;
+            border-radius: 50%;
+		}
+
+
+		.artist:hover {
+            transform: scale(1.1);
+  
+            transition: transform 0.3s ease-in-out;
+  
+		}
+
+
+
+
+
+
+/*Types Of Paintings Styles And Techniques section*/
+		.painting-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+		}
+
+		.painting-type {
+            background-color: #FFF;
+            padding: 20px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            margin-right: 30px;
+            margin-left: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+            width: 45%;
+            border-radius: 5%;
+            align-items: center;
+		}
+
+		.painting-type p {
+            margin: 20px 0;
+		}
+
+		h3 {
+            color: #B172C8;
+ 
+		}
+
+
+
+
+
+
+/*fooooooooooooooooooooter*/
+
+        .site-footer {
+            background-color: #000;
+            box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            
+		
+        }
+
+ 
+        .af {
+            text-decoration: none;
+            color: #fff;
+        }
+
+
+
+
+        .social-icon {
+            width: 40px; 
+            height: 40px; 
+            vertical-align: middle; /* Aligns the icons vertically */
+        }
+       
+
+
+/*partnerrrrsection*/
+
+        .partner-section {
+            text-align: center;
+            padding: 10px;
+            background-color:#fef4e8;
+        }
+
+        .partner-section img {
+            width: 100px; 
+            margin: 0 10px; /* Adjust margins between partner icons */
+	
+        }
+
+/* Back to Top Button Style */
+        #back-to-top-btn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border: none;
+            border-radius: 5px;
+          
+            cursor: pointer;
+        }
+
+        #back-to-top-btn img {
+            width: 40px; 
+            height: 40px; 
+        }
+
+
+/*responsive adjustments*/
+
+        @media(max-width:970px) {
+
+        .navbar .search {
+            display: none;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 5px;
+        }
+
+        .navbar img {
+            width: 150px;
+        }
+
+        .navbar .centred-nav .menu-1 {
+            display: none;
+        }
+
+        .navbar .centred-nav .menu-2 {
+            display: none;
+        }
+
+        .navbar .centred-nav img {
+            width: 150px;
+        }
+
+        .navbar .centred-nav .media {
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #fef4e8;
+            padding-top: 50px;
+        }
+
+        .navbar .centred-nav .media.active {
+            display: block;
+        }
+
+        .navbar .centred-nav .media a {
+            display: block;
+            border-bottom: 1px solid #777;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            margin: 15px 0;
+            font-size: 20px;
+        }
+
+        .navbar .centred-nav .media .last {
+            border: none;
+        }
+
+        .navbar .login-signin-container i {
+            display: block;
+        }
+
+
+        .navbar .media form {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .navbar .media form img {
+            width: 20px;
+        }
+
+        .navbar .media form input {
+            outline: none;
+            border: none;
+            background-color: transparent;
+        }
+
+        .navbar .media form input:focus {
+            border: 1px solid black;
+            background-repeat: no-repeat;
+        }
+
+        .navbar .media li:nth-of-type(1) {
+            border: 1px solid black;
+            margin: auto;
+            width: fit-content;
+        }
+		
+		
+		.painting-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+		.painting-type {
+            width: 90%;
+            margin-top: 30px;
+		}
+		.section-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .section-1 .article-1 {
+    text-align: center;
+        }
+
+
+}

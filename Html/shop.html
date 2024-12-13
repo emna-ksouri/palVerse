@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico|Caveat|Quicksand|Amatic+SC&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>PalVerse : An Art Odyssey</title>
+    <link rel="icon" type="image/jpg" href="../Image/Home-pics-vid/logo.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/shop.css">
+	 
+    
+</head>
+
+<body>
+
+    <!-- Start Banner section -->
+    <div class="moving-banner">
+        <p class="banner-text">&#x1F604; In life's gallery &#x1F3A8; let art &#x2728; be the masterpiece 🖼 that whispers your story to the world 🌍</p>
+    </div>
+
+    <!-- Start nav section -->
+    <nav class="navbar">
+        <div class="search">
+            <form action="/search" method="get" class="search-form">
+                <img id="search-log-icon" src="../Image/Home-pics-vid/search.jpg" alt="Search Icon">
+                <input type="text" id="search-box" name="q" placeholder="Search.for.art.">
+            </form>
+        </div>
+
+        <div class="centred-nav">
+            <!-- Menu 1 -->
+            <ul class="menu-1">
+                <li><a href="../Home.html">Home</a></li>
+                <li><a href="explore.html">Explore Art</a></li>
+            </ul>
+
+            <!-- Logo -->
+            <img src="../Image/Home-pics-vid/logo.jpg" alt="PalVerse Logo" class="logo">
+
+            <!-- Media Links -->
+            <ul class="media" id="media">
+                <li>
+                    <form action="/search" method="get" class="search-form">
+                        <img id="search-log-icon" src="../Image/Home-pics-vid/search.jpg" alt="Search Icon">
+                        <input type="text" id="search-box" name="q" placeholder="Search...">
+                    </form>
+                </li>
+                <li><a href="../Home.html">Home</a></li>
+                <li><a href="explore.html">Explore Art</a></li>
+                <li><a href="workshop.html">Workshops</a></li>
+                <li><a href="shop.html" class="last">Shop</a></li>
+            </ul>
+
+            <!-- Menu 2 -->
+            <ul class="menu-2">
+                <li><a href="workshop.html">Workshops</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </div>
+
+        <!-- Login/Signin Container -->
+        <div class="login-signin-container">
+            <img id="search-log-icon" src="../Image/Home-pics-vid/log.jpg" alt="Login Icon">
+            <span onclick="registreLog()">login</span>
+            <span onclick="registreSign()">Sign In</span>
+            <i class="fa-solid fa-bars" id="btn" onclick="menu()"></i>
+        </div>
+    </nav>
+    <!-- End nav section -->
+
+    <!-- Start login section -->
+    <div class="blur" id="blur"></div>
+    <div id="form" class="form-container">
+        <span class="close" id="close-btn" onclick="closeForm()">&times;</span>
+
+        
+
+        <!-- Social Icons -->
+        <div class="social">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="">
+            <img src="https://cdn.pixabay.com/photo/2021/06/15/12/17/instagram-6338401_1280.png" alt="">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/twitter-3-logo-jpg-transparent.png" alt="">
+        </div>
+
+        <!-- Login Form -->
+        <form class="login" id="login">
+            <div class="name">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="password">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        <!-- Sign-in Form -->
+        <form class="sign" id="sign" onsubmit="return validateForm()" method="post">
+            <div class="name">
+                <label for="new-username">New Username:</label>
+                <input type="text" id="new-username" name="new-username">
+            </div>
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+
+            </div>
+            <div class="password">
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" name="new-password">
+            </div>
+            <div class="password-2">
+                <label for="verify-password">Verify Password:</label>
+                <input type="password" id="verify-password" name="verify-password">
+            </div>
+            <button type="submit" class="btn">Sign In</button>
+        </form>
+    </div>
+    <!-- End login section -->
+
+
+
+  <div class="container">
+
+    <div class="sidebar">
+     <h2>Types</h2>
+     <ul id="typeList"></ul>
+    </div>
+	
+
+    <div class="main-content" id="mainContent">
+   <!-- Content will be loaded dynamically here -->
+
+    </div>
+
+    </div>
+
+
+     
+  <!-- Start footer  -->
+  <footer class="site-footer">
+    <div class="top-footer">
+      <p>Follow Us!:</p>
+      <a href="https://instagram.com" class="af"><img src="../Image/Home-pics-vid/instagram.jpg" alt="Instagram"
+          class="social-icon"></a>
+      <a href="https://facebook.com" class="af"><img src="../Image/Home-pics-vid/facebook.jpg" alt="Facebook"
+          class="social-icon"></a>
+      <a href="https://pinterest.com" class="af"><img src="../Image/Home-pics-vid/pinterest.jpg" alt="Pinterest"
+          class="social-icon"></a>
+    </div><br /><br />
+    <div class="bottom-footer">
+      <p class="slogan">
+        An Art Odyssey
+      </p><br />
+      <div class="legal-info">
+        &copy; 2024 PalVerse | <em>Directed By <strong>: </strong>Ksouri Emna G5 <strong>--</strong> Bejaoui Hadir G6</em>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer  -->
+
+
+
+  <!-- partner section  -->
+  <Section class="partner-section">
+    <img src="../Image/Home-pics-vid/p.jpg" alt="Partner 1">
+    <img src="../Image/Home-pics-vid/p1.jpg" alt="Partner 2">
+    <img src="../Image/Home-pics-vid/p2.jpg" alt="Partner 3">
+    <img src="../Image/Home-pics-vid/p3.jpg" alt="Partner 4">
+    <img src="../Image/Home-pics-vid/p4.jpg" alt="Partner 5">
+    <img src="../Image/Home-pics-vid/p5.jpg" alt="Partner 6">
+    <img src="../Image/Home-pics-vid/p6.jpg" alt="Partner 7">
+  </section>
+  <button onclick="scrollToTop()" id="back-to-top-btn" title="Go to top">
+          <img src="../Image/Home-pics-vid/return.jpg" alt="Back to Top">
+  </button>
+		
+  <script src="../js/shop.js"></script>
+ 
+</body>
+</html>

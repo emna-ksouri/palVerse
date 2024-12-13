@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico|Caveat|Quicksand|Amatic+SC&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>PalVerse : An Art Odyssey</title>
+    <link rel="icon" type="image/jpg" href="../Image/Home-pics-vid/logo.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/workshop.css">
+    
+</head>
+
+<body>
+
+    <!-- Start Banner section -->
+    <div class="moving-banner">
+        <p class="banner-text">&#x1F604; In life's gallery &#x1F3A8; let art &#x2728; be the masterpiece 🖼 that whispers your story to the world 🌍</p>
+    </div>
+
+    <!-- Start nav section -->
+    <nav class="navbar">
+        <div class="search">
+            <form action="/search" method="get" class="search-form">
+                <img id="search-log-icon" src="../Image/Home-pics-vid/search.jpg" alt="Search Icon">
+                <input type="text" id="search-box" name="q" placeholder="Search.for.art.">
+            </form>
+        </div>
+
+        <div class="centred-nav">
+            <!-- Menu 1 -->
+            <ul class="menu-1">
+                <li><a href="../Home.html">Home</a></li>
+                <li><a href="explore.html">Explore Art</a></li>
+            </ul>
+
+            <!-- Logo -->
+            <img src="../Image/Home-pics-vid/logo.jpg" alt="PalVerse Logo" class="logo">
+
+            <!-- Media Links -->
+            <ul class="media" id="media">
+                <li>
+                    <form action="/search" method="get" class="search-form">
+                        <img id="search-log-icon" src="../Image/Home-pics-vid/search.jpg" alt="Search Icon">
+                        <input type="text" id="search-box" name="q" placeholder="Search.for.art.">
+                    </form>
+                </li>
+                <li><a href="../Home.html">Home</a></li>
+                <li><a href="explore.html">Explore Art</a></li>
+                <li><a href="workshop.html">Workshops</a></li>
+                <li><a href="shop.html" class="last">Shop</a></li>
+            </ul>
+
+            <!-- Menu 2 -->
+            <ul class="menu-2">
+                <li><a href="workshop.html">Workshops</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </div>
+
+        <!-- Login/Signin Container -->
+        <div class="login-signin-container">
+            <img id="search-log-icon" src="../Image/Home-pics-vid/log.jpg" alt="Login Icon">
+            <span onclick="registreLog()">login</span>
+            <span onclick="registreSign()">Sign In</span>
+            <i class="fa-solid fa-bars" id="btn" onclick="menu()"></i>
+        </div>
+    </nav>
+    <!-- End nav section -->
+
+    <!-- Start login section -->
+    <div class="blur" id="blur"></div>
+    <div id="form" class="form-container">
+        <span class="close" id="close-btn" onclick="closeForm()">&times;</span>
+
+        
+
+        <!-- Social Icons -->
+        <div class="social">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="">
+            <img src="https://cdn.pixabay.com/photo/2021/06/15/12/17/instagram-6338401_1280.png" alt="">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/twitter-3-logo-jpg-transparent.png" alt="">
+        </div>
+
+        <!-- Login Form -->
+        <form class="login" id="login">
+            <div class="name">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="password">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        <!-- Sign-in Form -->
+        <form class="sign" id="sign" onsubmit="return validateForm()" method="post">
+            <div class="name">
+                <label for="new-username">New Username:</label>
+                <input type="text" id="new-username" name="new-username">
+            </div>
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+
+            </div>
+            <div class="password">
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" name="new-password">
+            </div>
+            <div class="password-2">
+                <label for="verify-password">Verify Password:</label>
+                <input type="password" id="verify-password" name="verify-password">
+            </div>
+            <button type="submit" class="btn">Sign In</button>
+        </form>
+    </div>
+    <!-- End login section -->
+
+
+  <!-- Start section 1 -->
+
+  <section class="coming-events">
+    <div class="check">Check out our upcoming events</div>
+
+  <div class="event">
+    <div class="affiche">
+      <img src="../Image/workshoppics/affiche1.jpg" alt="Event Image 2">
+    </div>
+    <div class="event-details">
+      <h3>Palette Harmony Exhibition</h3>
+      <p>Date: February 1, 2023</p>
+      <p>Location: Venue 2</p>
+	  <p>This exclusive event celebrates the fusion of diverse palettes, techniques, and artistic voices. </p>
+    </div>
+  </div>
+  
+  <div class="event">
+    <div class="affiche">
+      <img src="../Image/workshoppics/affiche2.jpg" alt="Event Image 3"> 
+   </div>
+    <div class="event-details">
+      <h3>Art Exhibition</h3>
+      <p>Date: February 1, 2023</p>
+      <p>Location: Venue 2</p>
+	  <p>Join renowned artists and fellow art enthusiasts for an evening of awe-inspiring paintings. </p>
+    </div>
+  </div>
+  
+  <div class="event">
+    <div class="affiche">
+      <img src="../Image/workshoppics/affiche3.jpg" alt="Event Image 2">
+    </div>
+    <div class="event-details">
+      <h3>Art work shop</h3>
+      <p>Date: February 1, 2023</p>
+      <p>Location: Venue 2</p>
+	  <p>This event invites you to explore the fantastical realms created by visionary artists. </p>
+    </div>
+  </div>
+  
+  <div class="event">
+    <div class="affiche">
+      <img src="../Image/workshoppics/affiche4.jpg" alt="Event Image 2">
+    </div>
+    <div class="event-details">
+      <h3>Art Gallery</h3>
+      <p>Date: February 1, 2023</p>
+      <p>Location: Venue 2</p>
+	 <p> an affair that blurs the lines between tradition and innovation. Experience the dynamic energy of artists </p>
+    </div>
+  </div>
+  
+
+
+
+</section>
+  <!-- End section 1 -->
+
+
+  <!-- Start section 1  -->
+  <section class="evenement">
+    <div class="check">Check out our Latest Events</div>
+    <div class="event-container">
+      <div class="event">
+        <figure>
+          <img src="../Image/workshoppics/evenement1.jpg" alt="">
+          <figcaption>
+            <h3>Live Painting</h3>
+            <div class="location">
+              <img src="../Image/workshoppics/location.jpg" alt="">
+              <p>86430, Vienne, Poitou-Charentes</p>
+            </div>
+            <div class="info">
+              <p>Organisez des sessions de peinture en direct, où les artistes créent une œuvre en temps réel et interagissent avec le public via un chat en direct.</p>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    
+    <div class="event">
+        <figure>
+          <img src="../Image/workshoppics/evenement2.jpg" alt="">
+          <figcaption>
+            <h3>Live Painting</h3>
+            <div class="location">
+              <img src="../Image/workshoppics/location.jpg" alt="">
+              <p>86430, Vienne, Poitou-Charentes</p>
+            </div>
+            <div class="info">
+              <p>Organisez des sessions de peinture en direct, où les artistes créent une œuvre en temps réel et interagissent avec le public via un chat en direct.</p>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    
+    <div class="event">
+        <figure>
+          <img src="../Image/workshoppics/evenement3.jpg" alt="">
+          <figcaption>
+            <h3>Live Painting</h3>
+            <div class="location">
+              <img src="../Image/workshoppics/location.jpg" alt="">
+              <p>86430, Vienne, Poitou-Charentes</p>
+            </div>
+            <div class="info">
+              <p>Organisez des sessions de peinture en direct, où les artistes créent une œuvre en temps réel et interagissent avec le public via un chat en direct.</p>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    
+    <div class="event">
+        <figure>
+          <img src="../Image/workshoppics/evenement4.jpg" alt="">
+          <figcaption>
+            <h3>Live Painting</h3>
+            <div class="location">
+              <img src="../Image/workshoppics/location.jpg" alt="">
+              <p>86430, Vienne, Poitou-Charentes</p>
+            </div>
+            <div class="info">
+              <p>Organisez des sessions de peinture en direct, où les artistes créent une œuvre en temps réel et interagissent avec le public via un chat en direct.</p>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    
+    <div class="event">
+        <figure>
+          <img src="../Image/workshoppics/evenement5.jpg" alt="">
+          <figcaption>
+            <h3>Live Painting</h3>
+            <div class="location">
+              <img src="../Image/workshoppics/location.jpg" alt="">
+              <p>86430, Vienne, Poitou-Charentes</p>
+            </div>
+            <div class="info">
+              <p>Organisez des sessions de peinture en direct, où les artistes créent une œuvre en temps réel et interagissent avec le public via un chat en direct.</p>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    
+    
+  
+    </div>
+  </section>
+  <!-- End section 2 -->
+
+  
+  
+    <!-- Start footer -->
+    <footer class="site-footer">
+        <div class="top-footer">
+            <p>Follow Us!:</p>
+            <a href="https://instagram.com" class="af"><img src="../Image/Home-pics-vid/instagram.jpg" alt="Instagram" class="social-icon"></a>
+            <a href="https://facebook.com" class="af"><img src="../Image/Home-pics-vid/facebook.jpg" alt="Facebook" class="social-icon"></a>
+            <a href="https://pinterest.com" class="af"><img src="../Image/Home-pics-vid/pinterest.jpg" alt="Pinterest" class="social-icon"></a>
+        </div><br /><br />
+        <div class="bottom-footer">
+            <p class="slogan">
+                An Art Odyssey
+            </p><br />
+            <div class="legal-info">
+                &copy; 2024 PalVerse | Directed By <strong>: </strong>Ksouri Emna G5 <strong>--</strong> Bejaoui Hadir G6
+				
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Partner section -->
+    <section class="partner-section">
+        <img src="../Image/Home-pics-vid/p.jpg" alt="Partner 1">
+        <img src="../Image/Home-pics-vid/p1.jpg" alt="Partner 2">
+        <img src="../Image/Home-pics-vid/p2.jpg" alt="Partner 3">
+        <img src="../Image/Home-pics-vid/p3.jpg" alt="Partner 4">
+        <img src="../Image/Home-pics-vid/p4.jpg" alt="Partner 5">
+        <img src="../Image/Home-pics-vid/p5.jpg" alt="Partner 6">
+        <img src="../Image/Home-pics-vid/p6.jpg" alt="Partner 7">
+    </section>
+
+    <button onclick="scrollToTop()" id="back-to-top-btn" title="Go to top">
+        <img src="../Image/Home-pics-vid/return.jpg" alt="Back to Top">
+    </button>
+	<script src="../js/Home.js"></script>
+</body>
+</html>
